@@ -1,0 +1,107 @@
+
+
+body{
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(to top, rgb(232 143 77), rgb(238, 168, 73));
+}
+
+
+.page{
+    margin: 40px 0;
+}
+
+.head{
+    text-align: center;
+}
+.head .logo{
+    width: 150px;
+    margin: auto;
+}
+.head .logo img{
+    width: 100%;
+}
+
+.head .name h2{
+    color: white;
+    margin: 0;
+}
+.head .discription h3{
+    margin: 5px
+}
+.head .discription p{
+    margin: 4px;
+    color: #ececec;
+}
+.head .discription span{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.content{
+    text-align: center;
+    margin-top: 40px;
+}
+.content .link{
+    position: relative;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid black;
+    overflow: hidden;
+    max-width: 700px;
+}
+.content .link::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    z-index: 0;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.content .insta::before{
+    background-color: #e1306c;
+}
+.content .fb::before{
+    background-color: #1877f2;
+}
+.content .wa::before{
+    background-color: #25D366;
+}
+
+.content .tik::before{
+    background-color: #ff0050;
+}
+.content .tel::before{
+    background-color: #5885a0;
+}
+.content .maps::before{
+    background-color: #ff6900;
+}
+.content .link a{
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+    font-size: 20px;
+    position: relative;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.content .link:hover::before{
+    left: 0;
+}
+.content .link:hover a{
+    color: white;
+}
